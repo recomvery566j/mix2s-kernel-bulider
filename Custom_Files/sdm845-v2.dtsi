@@ -582,10 +582,3 @@
 			    0x00 0x23c /* CHG_CTRL2 */
 			    0x22 0x210>; /* PWR_CTRL1 */
 };
-
-&gpu_opp_table {
-	opp-810000000 {
-		opp-hz = /bits/ 64 <810000000>;
-		opp-level = <RPMH_REGULATOR_LEVEL_TURBO>;
-	};
-};
