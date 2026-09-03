@@ -139,7 +139,7 @@ jobs:
           cp $GITHUB_WORKSPACE/custom_repo/Custom_Files/gpucc-sdm845.c drivers/clk/qcom/gpucc-sdm845.c
           cp $GITHUB_WORKSPACE/custom_repo/Custom_Files/sdm845-v2.dtsi arch/arm64/boot/dts/qcom/sdm845-v2.dtsi
           cp $GITHUB_WORKSPACE/custom_repo/Custom_Files/vdd-level-sdm845.h drivers/clk/qcom/vdd-level-sdm845.h
-          cp $GITHUB_WORKSPACE/custom_repo/Custom_Files/kgsl_pwrctrl.c /drivers/gpu/msm/kgsl_pwrctrl.c
+          cp $GITHUB_WORKSPACE/custom_repo/Custom_Files/kgsl_pwrctrl.c drivers/gpu/msm/kgsl_pwrctrl.c
           
           echo "CONFIG_COMPAT_VDSO=y" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
           echo "CONFIG_LTO_NONE=n" >> ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
